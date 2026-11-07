@@ -207,7 +207,7 @@ docs/media/                   README screenshots
 ### Start the development server
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/dustin04x/skander-wali-portfolio.git
 cd skander-wali-portfolio
 npm install
 npm run dev
