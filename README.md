@@ -237,7 +237,7 @@ npm run preview
 
 The contact section links to email, GitHub, LinkedIn, and the English/French CV downloads. Beat production is linked separately through Instagram: **[@prodbyskn](https://www.instagram.com/prodbyskn/)**.
 
-> The CV PDFs in `public/cv/` contain personal contact details. Review them before publishing this repository publicly.
+> The English and French CV PDFs in `public/cv/` are intentionally included as public downloads. They contain email and phone contact details.
 
 ---
 
