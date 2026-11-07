@@ -2,7 +2,8 @@
 .site-header nav a,.menu-toggle{font-size:11px}
 .hero-bottom{grid-template-columns:repeat(12,minmax(0,1fr));align-items:start}
 .hero-portrait{grid-column:1/4;grid-row:1;margin:0;max-width:240px}
-.hero-portrait img{display:block;width:100%;height:300px;object-fit:cover;object-position:center 30%;filter:grayscale(1);border:1px solid #111}
+.hero-portrait-image{height:300px;overflow:hidden;border:1px solid #111}
+.hero-portrait-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%;transform:scale(1.08) translateX(-14%);transform-origin:center 30%;filter:grayscale(1)}
 .hero-portrait figcaption{display:flex;gap:7px;align-items:center;justify-content:space-between;padding-top:8px;border-bottom:1px solid var(--line);padding-bottom:7px;font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#555}
 .hero-portrait figcaption span{color:#aaa}
 .hero-statement{grid-column:4/9}
@@ -43,7 +44,7 @@
 @media(max-width:620px){
   .hero-bottom{grid-template-columns:1fr;gap:22px}
   .hero-portrait{grid-column:1;grid-row:auto;width:min(48%,190px);max-width:none}
-  .hero-portrait img{height:220px;object-position:center 30%}
+  .hero-portrait-image{height:220px}
   .hero-statement,.hero-meta{grid-column:1}
   .hero-statement{grid-row:auto}
   .hero-meta{grid-row:auto}

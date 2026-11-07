@@ -10,7 +10,8 @@
 .hero h1{font-size:clamp(72px,11vw,156px);letter-spacing:-.095em}
 .hero h1 em{color:#aaa}
 .hero-bottom{border-top-color:#444}
-.hero-portrait img{border-color:#777;filter:grayscale(1) contrast(1.03)}
+.hero-portrait-image{border-color:#777}
+.hero-portrait-image img{filter:grayscale(1) contrast(1.03)}
 .hero-portrait figcaption{border-color:#444;color:#ccc}
 .hero-portrait figcaption span{color:#666}
 .hero-statement p{color:#eee}
@@ -54,7 +55,7 @@
 @media(max-width:620px){
   .hero{padding-left:var(--gutter);padding-right:var(--gutter)}
   .hero h1{font-size:clamp(55px,13vw,80px);margin-top:72px}
-  .hero-portrait img{filter:grayscale(1) contrast(1.03)}
+  .hero-portrait-image img{filter:grayscale(1) contrast(1.03)}
   .work::after{background-size:300px 420px}
   .beat-note{grid-template-columns:1fr;gap:25px;min-height:300px;padding-top:55px;padding-bottom:55px}
   .beat-label{grid-row:1}

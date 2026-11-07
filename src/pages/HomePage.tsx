@@ -91,7 +91,7 @@ export function HomePage() {
         <div className="hero-top"><span className="eyebrow">Computer science · security · software</span><span className="hero-coordinate">Hammam Sousse / Tunisia</span></div>
         <h1>Build. Break. <em>Secure.</em></h1>
         <div className="hero-bottom">
-          <figure className="hero-portrait"><img src="/skander-wali.webp" alt="Skander Wali" width="640" height="800" fetchPriority="high"/><figcaption>Skander Wali <span>·</span> Tunisia</figcaption></figure>
+          <figure className="hero-portrait"><div className="hero-portrait-image"><img src="/skander-wali.webp" alt="Skander Wali" width="640" height="800" fetchPriority="high"/></div><figcaption>Skander Wali <span>·</span> Tunisia</figcaption></figure>
           <div className="hero-statement">
             <p>I’m Skander, a final-year Computer Science student at ISITCom in Hammam Sousse. I focus on offensive security, vulnerability analysis, and security tooling.</p>
             <div className="hero-actions"><a className="text-link" href="#work">Selected work <Arrow diagonal={false}/></a><a className="text-link" href="#contact">Start a conversation <Arrow/></a></div>
