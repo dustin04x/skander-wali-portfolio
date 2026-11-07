@@ -1,5 +1,6 @@
 :root{--paper:#fff;--ink:#080808;--line:#dedede;--muted:#747474;--soft:#f3f3f1}
-.site-header{background:#080808;color:#fff;border-bottom-color:#333}
+.site-header{background:#080808;color:#fff;border-bottom-color:#333;transition:transform var(--duration) var(--ease)}
+.site-header.is-hidden{transform:translateY(-100%)}
 .wordmark span{color:#aaa}
 .site-header nav a:after{color:#fff}
 .menu-toggle{color:#fff}
