@@ -1,0 +1,66 @@
+:root{--paper:#fff;--ink:#080808;--line:#dedede;--muted:#747474;--soft:#f3f3f1}
+.site-header{background:#080808;color:#fff;border-bottom-color:#333}
+.wordmark span{color:#aaa}
+.site-header nav a:after{color:#fff}
+.menu-toggle{color:#fff}
+.hero{position:relative;isolation:isolate;max-width:none;background:#080808;color:#fff;padding-left:max(var(--gutter),calc((100vw - var(--page))/2 + var(--gutter)));padding-right:max(var(--gutter),calc((100vw - var(--page))/2 + var(--gutter)));}
+.hero-motion{position:absolute;inset:0;z-index:-1;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.2;pointer-events:none}
+.hero-top,.hero-index{color:#bcbcbc}
+.hero-top .eyebrow,.hero-coordinate{color:#bcbcbc}
+.hero h1{font-size:clamp(72px,11vw,156px);letter-spacing:-.095em}
+.hero h1 em{color:#aaa}
+.hero-bottom{border-top-color:#444}
+.hero-portrait img{border-color:#777;filter:grayscale(1) contrast(1.03)}
+.hero-portrait figcaption{border-color:#444;color:#ccc}
+.hero-portrait figcaption span{color:#666}
+.hero-statement p{color:#eee}
+.hero-meta div{border-color:#3e3e3e}
+.hero-meta span{color:#aaa}
+.hero-meta b{color:#fff}
+.hero-index{border-top:1px solid #333}
+.text-link:after,.contact-link:after{background:currentColor}
+.work{position:relative;isolation:isolate;background-color:#080808;color:#fff;border-top:1px solid #333;box-shadow:0 0 0 100vmax #080808;clip-path:inset(0 -100vmax)}
+.work::after{position:absolute;inset:0;z-index:-1;content:"";pointer-events:none;opacity:.11;background-image:repeating-radial-gradient(ellipse at 100% 12%,transparent 0 24px,rgba(255,255,255,.72) 25px 26px,transparent 27px 43px);background-repeat:no-repeat;background-size:480px 630px;background-position:right top}
+.work .section-kicker,.work .project-number{color:#aaa}
+.work .section-kicker span{color:#fff}
+.work .section-head p{color:#c4c4c4}
+.work .project-row{border-color:#444}
+.work .project-info .eyebrow{color:#bcbcbc}
+.work .project-info h3{color:#fff}
+.work .project-info>p{color:#ccc}
+.work .stack{color:#aaa}
+.work .project-links a{border-color:#777;color:#fff}
+.project-frame{border-color:#f2f2f2;box-shadow:5px 5px 0 rgba(255,255,255,.23)}
+.project-frame-bar{background:#111;color:#ccc;border-color:#fff}
+.project-frame-bar>span:nth-child(2){color:#fff}
+.frame-dots i{background:#111;border-color:#eee}
+.project-preview:hover .project-frame{box-shadow:7px 7px 0 rgba(255,255,255,.4)}
+.beat-note{position:relative;isolation:isolate;display:grid;grid-template-columns:1fr 1.2fr;align-items:center;gap:30px;min-height:270px;background:#080808;color:#fff;border-top:1px solid #444;border-bottom:1px solid #444;box-shadow:0 0 0 100vmax #080808;clip-path:inset(0 -100vmax);overflow:hidden}
+.beat-label{align-self:start;color:#aaa;font:10px var(--mono);letter-spacing:.1em}
+.beat-copy{position:relative;z-index:1;max-width:540px}
+.beat-copy h2{font-size:clamp(38px,5vw,66px);line-height:1;letter-spacing:-.075em;margin:0 0 13px}
+.beat-copy p{max-width:390px;color:#c8c8c8;font-size:15px;margin:0 0 20px}
+.beat-copy strong{color:#fff;font-weight:700}
+.beat-link{display:inline-flex;align-items:center;gap:10px;min-height:44px;border-bottom:1px solid #777;font-size:12px;font-weight:700}
+.beat-wave{position:absolute;right:0;bottom:0;width:46%;height:100%;overflow:visible;opacity:.28;mask-image:linear-gradient(90deg,transparent,#000 30%)}
+.beat-wave path{fill:none;stroke:#fff;stroke-width:2;vector-effect:non-scaling-stroke}
+.contact{border-top-color:#111}
+.contact .section-kicker,.notes .section-kicker{color:#666}
+.contact .section-kicker span,.notes .section-kicker span{color:#111}
+.footer-inner{border-color:#111;color:#666}
+.footer-inner a{color:#111}
+.site-header nav a:hover,.site-header nav a:focus-visible{color:#ccc}
+@media(max-width:900px){.hero h1{font-size:clamp(68px,11.5vw,118px)}}
+@media(max-width:620px){
+  .hero{padding-left:var(--gutter);padding-right:var(--gutter)}
+  .hero h1{font-size:clamp(55px,13vw,80px);margin-top:72px}
+  .hero-portrait img{filter:grayscale(1) contrast(1.03)}
+  .work::after{background-size:300px 420px}
+  .beat-note{grid-template-columns:1fr;gap:25px;min-height:300px;padding-top:55px;padding-bottom:55px}
+  .beat-label{grid-row:1}
+  .beat-copy{grid-row:2}
+  .beat-wave{width:70%;height:65%;opacity:.16}
+}
+.hero h1{white-space:nowrap;font-size:clamp(28px,8.5vw,130px)}
+html{scroll-behavior:auto!important}
+.reveal,.reveal.is-visible{opacity:1;transform:none;transition:none}

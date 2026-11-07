@@ -1,0 +1,1 @@
+export function Arrow({ diagonal = true }: { diagonal?: boolean }) { return <span className="arrow" aria-hidden="true">{diagonal ? '↗' : '↓'}</span>; }
