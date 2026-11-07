@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useLenis } from 'lenis/react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Arrow } from '../ui/Arrow';
 import { Icon } from '../ui/Icon';
 import { profile } from '../../data/profile';
@@ -36,4 +37,16 @@ export function SiteHeader() {
     <nav id="site-nav" className={menuOpen ? 'open' : ''} aria-label="Main navigation"><Link to="/#work" onClick={closeMenu}>Work</Link><Link to="/#about" onClick={closeMenu}>About</Link><Link to="/#notes" onClick={closeMenu}>Notes</Link><Link to="/#contact" onClick={closeMenu}>Contact</Link><a href={profile.github} target="_blank" rel="noreferrer" onClick={closeMenu}><Icon name="github" size={14}/>GitHub <Arrow/></a></nav>
   </div></header>;
 }
-export function SiteFooter() { return <footer><div className="footer-inner"><span>SKANDER WALI · 2026</span><span>TUNISIA</span><Link to="/">BACK TO PORTFOLIO ↑</Link></div></footer>; }
+export function SiteFooter() {
+  const lenis = useLenis();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const returnToPortfolio = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    if (location.pathname !== '/') navigate('/');
+    lenis?.scrollTo(0, { immediate: location.pathname !== '/' });
+  };
+
+  return <footer><div className="footer-inner"><span>SKANDER WALI · 2026</span><span>TUNISIA</span><a href="/" onClick={returnToPortfolio}>BACK TO PORTFOLIO ↑</a></div></footer>;
+}
